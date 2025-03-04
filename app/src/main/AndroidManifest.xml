@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizForFun">
+
+        <activity android:name="com.nabeel.quizforfun.GeographyOrLiteratureQuizActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.FinalResultActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.MathQuizActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.EditPasswordActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.HistoryActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.RuleActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.QuizOptionActivity" android:exported="false" />
+        <activity android:name="com.nabeel.quizforfun.RegisterActivity" android:exported="false" />
+
+        <!-- The launcher activity MUST have android:exported="true" -->
+        <activity
+            android:name="com.nabeel.quizforfun.LoginActivity"
+            android:theme="@style/splashScreenTheme"
+            android:exported="true"> <!-- Added android:exported="true" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.nabeel.quizforfun.MainActivity" android:exported="false" />
+    </application>
+
+</manifest>
